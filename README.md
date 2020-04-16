@@ -1,4 +1,4 @@
-# gizmotronic/openfire:4.4.4
+# kaneymhf/openfire
 
 - [Introduction](#introduction)
   - [Contributing](#contributing)
@@ -54,16 +54,16 @@ If the above recommendations do not help then [report your issue](../../issues/n
 
 ## Installation
 
-Automated builds of the image are available on [Dockerhub](https://hub.docker.com/r/gizmotronic/openfire) and is the recommended method of installation.
+Automated builds of the image are available on [Dockerhub](https://hub.docker.com/r/kaneymhf/openfire) and is the recommended method of installation.
 
 ```bash
-docker pull gizmotronic/openfire:4.4.4
+docker pull kaneymhf/openfire
 ```
 
 Alternatively you can build the image yourself.
 
 ```bash
-docker build -t gizmotronic/openfire github.com/gizmotronic/docker-openfire
+docker build -t kaneymhf/openfire github.com/kaneymhf/docker-openfire
 ```
 
 ## Quickstart
@@ -74,7 +74,7 @@ Start Openfire using:
 docker run --name openfire -d --restart=always \
   --publish 9090:9090 --publish 5222:5222 --publish 7777:7777 \
   --volume /srv/docker/openfire:/var/lib/openfire \
-  gizmotronic/openfire:4.4.4
+  kaneymhf/openfire
 ```
 
 *Alternatively, you can use the sample [docker-compose.yml](docker-compose.yml) file to start the container using [Docker Compose](https://docs.docker.com/compose/)*
@@ -101,7 +101,7 @@ You may append options to the startup command to configure the JVM:
 ```bash
 docker run -name openfire -d \
   [DOCKER_OPTIONS] \
-  gizmotronic/openfire:4.4.4 \
+  kaneymhf/openfire \
   -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode
 ```
 
@@ -122,7 +122,7 @@ To upgrade to newer releases:
   1. Download the updated Docker image:
 
   ```bash
-  docker pull gizmotronic/openfire:4.4.4
+  docker pull kaneymhf/openfire
   ```
 
   2. Stop the currently running image:
@@ -142,7 +142,7 @@ To upgrade to newer releases:
   ```bash
   docker run -name openfire -d \
     [OPTIONS] \
-    gizmotronic/openfire:4.4.4
+    kaneymhf/openfire
   ```
 
 ## Shell Access
