@@ -1,4 +1,4 @@
-FROM openjdk:8u232-jre-slim
+FROM adoptopenjdk/openjdk11:jre-11.0.6_10-debianslim
 MAINTAINER facincani.maykon@gmail.com
 
 ENV OPENFIRE_VERSION=4.5.1 \
