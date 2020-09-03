@@ -4,6 +4,6 @@ build:
 	@docker build --tag=kaneymhf/openfire .
 	@docker push kaneymhf/openfire
 
-release: build
+release: 
 	@docker build --tag=kaneymhf/openfire:$(shell cat VERSION) .
 	@docker push kaneymhf/openfire:$(shell cat VERSION)
