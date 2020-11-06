@@ -8,3 +8,6 @@
 
 **4.5.3**
 - openfire: upgrade to 4.5.3
+
+**4.6.0**
+- openfire: upgrade to 4.6.0
