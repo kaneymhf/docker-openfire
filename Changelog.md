@@ -17,3 +17,6 @@
 
 **4.6.3**
 - openfire: upgrade to 4.6.3
+
+**4.6.4**
+- openfire: upgrade to 4.6.4

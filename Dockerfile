@@ -1,7 +1,7 @@
 FROM adoptopenjdk/openjdk11:jre-11.0.6_10-debianslim
 LABEL maintainer="facincani.maykon@gmail.com"
 
-ENV OPENFIRE_VERSION=4.6.3 \
+ENV OPENFIRE_VERSION=4.6.4 \
     OPENFIRE_USER=openfire \
     OPENFIRE_DATA_DIR=/var/lib/openfire \
     OPENFIRE_LOG_DIR=/var/log/openfire
